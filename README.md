@@ -1,9 +1,3 @@
-Sí, tienes razón. Para un repositorio de GitHub que busca visibilidad y escrutinio internacional, el inglés es el estándar.
-
-Aquí está la versión completa del archivo **`README.md`** en inglés, manteniendo el tono formal y la estructura rigurosa.
-
----
-
 # Constitutive Quantum Phase Theory (CQPT): A Full Derivation of Constitutive Gravity Theory (CGT) from First Principles
 
 ## Executive Summary
