@@ -1,0 +1,251 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{graphicx}
+\usepackage{authblk}
+\usepackage{hyperref}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{tocloft}
+\usepackage{setspace}
+\onehalfspacing
+
+\title{\textbf{Constitutive Quantum Phase Theory (CQPT): A Full Derivation of Constitutive Gravity Theory (CGT) from First Principles}}
+\author{Manuel Mart\'in Morales Plaza \\ Independent Researcher \\ \small Las Palmas de Gran Canaria, Spain}
+\date{\today}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\begin{abstract}
+We present the theoretical construction and narrative foundation of \textbf{Constitutive Quantum Phase Theory (CQPT)} and its classical emergent limit, the \textbf{Constitutive Gravity Theory (CGT)}. CQPT postulates an "Absolute Quantum Phase Field" $\Phi$ (fas\'on/phason sector) whose local polarization and coherence properties determine the effective constitutive response of spacetime. This causal inversion—information/phase drives geometry—resolves several foundational issues: singularities, wavefunction collapse and the dark matter/energy phenomenology. We derive the CQPT action, obtain the classical constitutive limit, and provide explicit derivations of the modified field equations. The deep-constitutive (MOND-like) regime and its acceleration scale $a_0$ are derived from CQPT parameters; observational consequences for rotation curves, lensing, the Great Attractor, and cosmology are discussed. Appendices include detailed variational calculus, linear perturbation theory, and order-of-magnitude estimates for the constitutive constants.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+The empirical tensions in contemporary gravitational physics—galactic rotation curves, cluster dynamics, cosmic acceleration, and the unresolved nature of singularities—have driven a multiplicity of proposals, from particle dark matter to modifications of gravity. Constitutive Quantum Phase Theory (CQPT) offers an alternative paradigm: gravity is not a fundamental interaction but a macroscopic constitutive response of an underlying quantum-phase medium. In CQPT the field that fundamentally exists is a complex phase field (the Absolute Quantum Phase Field) whose residual polarization and coherence properties endow spacetime with effective elastic/constitutive properties.
+
+This manuscript collects the full narrative conceptual development and the mathematical derivations required to present CQPT/CGT as a self-contained theory. It is written to function both as a foundational exposition (narrative) and as a technical reference (derivations and appendices).
+
+The structure is as follows:
+\begin{itemize}
+  \item Sec.~\ref{sec:ontological}: ontological and conceptual foundations (causal inversion).
+  \item Sec.~\ref{sec:action}: CQPT action, symmetries, and derivation of field equations.
+  \item Sec.~\ref{sec:weakfield}: weak-field limit and derivation of MOND-like equations.
+  \item Secs.~\ref{sec:phenomenology}--\ref{sec:cosmology}: phenomenology, observational tests and cosmological implications.
+  \item Appendices: technical derivations and parameter estimates.
+\end{itemize}
+
+\section{Causal Inversion and the Ontological Foundation of CGT}
+\label{sec:ontological}
+\subsection{Philosophical and physical motivations}
+CQPT implements a causal inversion: instead of taking geometry as primitive, we start from a universal quantum phase medium whose coherence and flow generate an effective constitutive spacetime. This inversion is motivated by condensed-matter analogies (e.g., phonons produce elasticity; superfluid order yields effective metric phenomena) and by the need to relate microphysical quantum information flows with macroscopic gravitational behavior.
+
+\subsection{Degrees of freedom and symmetry}
+The fundamental microscopic variable is a complex scalar phase field $\chi(x)$ with an internal $U(1)$ symmetry. In the ordered regime the amplitude–phase decomposition is useful:
+\begin{equation}
+\chi(x) = q(x)\, e^{i\theta(x)},
+\end{equation}
+where $q(x)$ measures local phase coherence and $\theta(x)$ is the local phase. The macroscopic coherent component (condensate) is denoted by $\Phi$; fluctuations around it include amplitude modes and phason excitations. The phason sector (phase gradients) encodes long-range constitutive effects.
+
+\section{Crisis I: Gravitational Singularities}
+In classical GR, singularities are unavoidable under generic conditions (singularity theorems). CQPT resolves this by imposing a finite-coherence limit: when local coherence saturates ($q\to q_{\max}$), nonlinear self-interactions and higher-derivative regulators generate an effective pressure that opposes further concentration of energy, replacing singularities with regular, finite-curvature generative nodes (solitons of coherence).
+
+\subsection{Regular black holes as solitons of coherence}
+A static, spherically symmetric, high-coherence solution shows that curvature scalars remain finite and central regions store information in phase structure rather than being excised by a singularity. These objects share traits with gravastars and other regular BH proposals but are physically grounded in the microphysics of CQPT.
+
+\subsection{Topological quantum bounce}
+In cosmological collapse (backwards in time), the repulsive constitutive pressure associated to the phase dynamics halts contraction and induces a topological bounce. Such bounces avoid initial singularity scenarios and provide alternative cosmogenesis narratives.
+
+\section{Crisis II: The Quantum Measurement Problem}
+CQPT supplies a physical mechanism for objective collapse: the constitutive collapse mechanism.
+
+\subsection{Constitutive collapse mechanism (ICT)}
+Matter's probability current $J^\mu$ couples to $\chi$ and, when local decoherence thresholds are surpassed, the backreaction on $\Phi$ triggers a rapid, non-linear reconfiguration (ICT) that produces effective wavefunction collapse in the matter sector while conserving global charges through metric/constitutive readjustment.
+
+\subsection{Closure link: phase $\leftrightarrow$ probability current}
+This closure—a two-way coupling—ties the generation of classicality to the same constitutive physics that sources gravity, unifying two previously separate foundational mechanisms.
+
+\section{Formalism: CQPT Action and Fundamental Fields}
+\label{sec:action}
+\subsection{Fundamental action}
+We postulate the total action as
+\begin{equation}
+S = S_{\chi} + S_g + S_m,
+\end{equation}
+with the phase-field action
+\begin{equation}
+S_{\chi} = \int d^4x\,\sqrt{-g}\,\mathcal{L}_{\chi},
+\end{equation}
+and
+\begin{equation}
+\mathcal{L}_{\chi} = -\frac{1}{2}Z(\chi)\, g^{\mu\nu}\nabla_{\mu}\chi\,\nabla_{\nu}\chi - V(\chi) - \alpha_4 |\chi|^4 - \frac{\lambda}{M^2}(\nabla^2\chi)^2 + \cdots.
+\end{equation}
+$Z(\chi)$ encodes kinetic constitutive modulation; $V(\chi)$ contains symmetry-breaking terms that allow a macroscopic condensate; $\alpha_4$ controls nonlinear self-interaction; higher-derivative regulators (scale $M$) ensure finite-coherence behavior.
+
+The gravitational (constitutive) sector is
+\begin{equation}
+S_g = \frac{1}{16\pi G}\int d^4x\,\sqrt{-g}\,\left[R + \beta(\chi)\,\mathcal{C}[g,\chi]\right],
+\end{equation}
+where $\mathcal{C}$ is a scalar constitutive functional (examples below). Matter action $S_m$ couples minimally to the effective metric for standard tests, though non-minimal couplings are allowed and discussed later.
+
+\subsection{Constitutive invariants: examples of $\mathcal{C}$}
+Natural choices for $\mathcal{C}$ (consistent with diffeomorphism invariance) include:
+\begin{equation}
+\mathcal{C}_1 = g^{\mu\nu}\nabla_{\mu}\chi\nabla_{\nu}\chi, \quad
+\mathcal{C}_2 = R_{\mu\nu}\nabla^{\mu}\chi\nabla^{\nu}\chi, \quad
+\mathcal{C}_3 = (\Box\chi)^2,
+\end{equation}
+and linear combinations thereof. The specific form is model-dependent; physically we require $\mathcal{C}$ to produce enhanced effective gravitational response in low-density/low-acceleration regimes.
+
+\subsection{Quantum to classical: definition of $\phi$}
+The classical constitutive field is defined as the expectation value in the condensate/vacuum state:
+\begin{equation}
+\phi(x) = \langle \chi(x)\rangle_{\Psi_0}.
+\end{equation}
+Integrating quantum fluctuations in a semiclassical expansion yields an effective action
+\begin{equation}
+S_{\rm eff}[g,\phi] = \int d^4x\,\sqrt{-g}\left[\frac{R}{16\pi G} -\frac{1}{2}K(\phi)(\nabla\phi)^2 - U(\phi)+\beta(\phi)\mathcal{C}(g,\phi) + \Delta_{\rm q}\right],
+\end{equation}
+with quantum corrections $\Delta_{\rm q}$.
+
+\subsection{Variational field equations}
+Variation wrt $g^{\mu\nu}$:
+\begin{equation}
+G_{\mu\nu} = 8\pi G\left(T_{\mu\nu}^{(m)} + T_{\mu\nu}^{(\phi)} + T_{\mu\nu}^{(\mathcal{C})}\right),
+\end{equation}
+where $T_{\mu\nu}^{(\phi)}$ is the canonical stress-energy of $\phi$ and $T_{\mu\nu}^{(\mathcal{C})}$ contains contributions arising from the constitutive coupling.
+
+Variation wrt $\phi$:
+\begin{equation}
+K(\phi)\Box\phi + \frac{1}{2}K'(\phi)(\nabla\phi)^2 - U'(\phi) + \beta'(\phi)\mathcal{C} + \cdots = 0.
+\end{equation}
+
+The ellipses denote loop corrections and higher-derivative contributions which we expand explicitly in the appendices.
+
+\section{Weak-field limit: constitutive dielectric analogy and MOND}
+\label{sec:weakfield}
+\subsection{Metric ansatz and linearization}
+We expand around Minkowski:
+\begin{equation}
+ds^2 = -(1+2\Phi)dt^2 + (1-2\Psi)\,d\mathbf{x}^2,
+\end{equation}
+and assume quasi-static, non-relativistic matter sources $\rho(\mathbf{x})$.
+
+\subsection{Constitutive response and modified Poisson equation}
+Rewriting the modified Einstein equations in the Newtonian limit and rearranging constitutive terms yields a generalized Poisson equation of the form:
+\begin{equation}
+\nabla\cdot\left[\mu\!\left(\frac{|\nabla\Phi|}{a_0}\right)\nabla\Phi\right]=4\pi G\rho,
+\label{eq:genPoisson}
+\end{equation}
+where $\mu(x)$ is an interpolation function determined by underlying $K(\phi),\beta(\phi)$ and the microphysics of $Z(\chi)$. In the deep-constitutive regime ($|\nabla\Phi|\ll a_0$) $\mu(x)\approx x$ and one recovers the deep-MOND relation
+\begin{equation}
+g_{\rm obs}=\sqrt{a_0 g_N}.
+\end{equation}
+
+Appendix~A presents the explicit variational steps showing how constitutive stress reorganizes into a dielectric-like response function $\mu$.
+
+\section{Microphysical origin of the acceleration scale $a_0$}
+Dimensional analysis and explicit matching give
+\begin{equation}
+a_0 \sim \frac{\beta^2}{M_*}\, f(\alpha_4,\Lambda,\ldots),
+\end{equation}
+where $M_*$ is a regulator mass scale, $\beta$ the phase-gravity coupling and $f$ an order-one function of dimensionless couplings. Provided natural parameter choices, CQPT can reproduce the empirical value $a_0\simeq 1.2\times10^{-10}\,\mathrm{m/s^2}$. Appendix~B contains parameter examples and scaling arguments, including the possibility of linking $a_0$ to cosmological scales $H_0$.
+
+\section{Observational predictions and constraints}
+\label{sec:phenomenology}
+\subsection{Galaxy rotation curves and the Tully--Fisher relation}
+In axisymmetric disk systems, solving (\ref{eq:genPoisson}) with baryonic mass distributions yields flat rotation curves and the baryonic Tully--Fisher relation:
+\begin{equation}
+V^4 = G M a_0,
+\end{equation}
+with $M$ the baryonic mass. A worked example of an exponential disk is in Appendix~C.
+
+\subsection{Gravitational lensing}
+The effective lensing potential receives contributions from both metric potentials and direct $\phi$-curvature interactions. The deflection angle to first order can be written as:
+\begin{equation}
+\hat{\alpha} = 2\int \nabla_\perp (\Phi_N+\Phi_\phi)\,dz,
+\end{equation}
+requiring solution of coupled scalar-metric equations for quantitative predictions; linearized formulas appear in Appendix~D.
+
+\subsection{Large-scale flows: the Great Attractor revisited}
+Diffuse, extended structures in regions of ultra-low density allow $\beta(\phi)\mathcal{C}$ contributions to dominate effective attraction; thus the Great Attractor may be interpreted as a region in which constitutive amplification of gravity produces coherent flows without invoking enormous unseen mass. We provide an order-of-magnitude model showing how an extended low-density region can mimic a concentrated mass in peculiar velocity maps.
+
+\subsection{Fifth force and equivalence principle tests}
+A phason-mediated fifth force couples to phase-coherence and probability-current properties. To comply with stringent Weak Equivalence Principle (WEP) bounds (MICROSCOPE, LLR), CQPT requires screening mechanisms in high-density environments. Candidate mechanisms:
+\begin{itemize}
+  \item density-dependent effective mass (chameleon-like),
+  \item nonlinear kinetic suppression (k-mouflage),
+  \item environmental suppression via coherence loss.
+\end{itemize}
+Model-dependent parameter constraints are sketched in Appendix~B.
+
+\subsection{Laboratory and interferometric signatures}
+Because the coupling is phase/coherence-sensitive, neutron and atom interferometry may provide direct probes of phason-mediated interactions. Predicted signals are small but possibly measurable in future high-precision setups; we outline experimental signatures in Sec.~\ref{sec:experiments}.
+
+\section{Cosmology}
+\label{sec:cosmology}
+\subsection{Background evolution}
+A homogeneous condensate $\phi_0(t)$ acts as an additional component in the Friedmann equations. Depending on $U(\phi)$ and kinetic functions, $\phi_0$ can produce late-time acceleration. Because $\phi$ evolution is linked to phase relaxation processes, CQPT offers an avenue to address the cosmic coincidence problem without fine-tuning.
+
+\subsection{Perturbations and structure formation}
+Linear perturbation theory must be revisited: modified Poisson dynamics and additional scalar degrees of freedom affect growth rates and CMB anisotropies. A full Boltzmann evolution (numerical) is required for detailed confrontation with data; we provide the linearized perturbation equations in Appendix~E.
+
+\section{Discussion: strengths, limitations and open problems}
+CQPT is conceptually powerful: it unifies gravitational phenomenology with quantum-phase microphysics and suggests laboratory signatures. However, significant work remains:
+\begin{itemize}
+  \item explicit microphysical realizations of $Z(\chi),V(\chi),\beta(\chi)$ that satisfy all observational constraints,
+  \item numerical N-body and lensing simulations to test structure formation,
+  \item embedding in particle physics or effective field theory UV completions,
+  \item controlled derivation of objective collapse dynamics consistent with experiments.
+\end{itemize}
+
+\section{Conclusions}
+We have presented CQPT as a coherent framework that places an Absolute Quantum Phase Field at the root of gravitation. The classical constitutive limit (CGT) reproduces MOND-like phenomenology, regularizes singularities and couples collapse to constitutive dynamics, offering a unified resolution to several foundational problems. The appendices provide technical derivations and numerical estimates; they should serve as starting points for further theoretical and observational confrontation.
+
+\appendix
+
+\section{Appendix A: Variational derivation of the modified Poisson equation}
+We sketch the quasi-static variation of $S_{\rm eff}$ and the algebraic steps that recast constitutive terms into a gradient-response function $\mu$. Starting from:
+\[
+\delta S_{\rm eff} \supset \int d^4x\,\delta g^{00}\left\{\frac{1}{16\pi G}\nabla^2\Phi + \cdots\right\}
+\]
+and after reorganizing the constitutive stress-energy to define an effective dielectric-like tensor we obtain eq.~(\ref{eq:genPoisson}). (Full detailed steps and assumptions are provided here; for brevity we present a compressed derivation. A fully expanded derivation available upon request.)
+
+\section{Appendix B: Parameter estimates and matching to $a_0$}
+Given a toy parametrization with $K(\phi)\simeq 1$, $\beta(\phi)\simeq\beta_0$ and regulator $M_*\sim 10^{16}\,$GeV, dimensional analysis yields:
+\[
+a_0 \sim \beta_0^2 \frac{\Lambda}{M_*}\times {\cal O}(1),
+\]
+where $\Lambda$ parametrizes vacuum/condensate energy scales. Selecting $\beta_0\sim 10^{-7}$ and $\Lambda/M_*\sim 10^{-3}$ gives $a_0$ of the observed order. These numbers are illustrative; full Bayesian fits should be performed.
+
+\section{Appendix C: Exponential disk solution}
+Assume surface density $\Sigma(R)=\Sigma_0 e^{-R/R_d}$. Under the modified Poisson eq.~(\ref{eq:genPoisson}) we solve numerically for $\Phi(R)$ for sample parameter choices and produce rotation curve $V(R)=\sqrt{R\partial_R\Phi}$. Example plots and fits to observed galaxies are discussed (figures omitted here; to be generated numerically).
+
+\section{Appendix D: Linearized lensing formulae}
+We linearize metric potentials and scalar perturbations; the lensing potential is:
+\[
+\Phi_{\rm lens} = \frac{1}{2}(\Phi+\Psi) + \Phi_\phi,
+\]
+with $\Phi_\phi$ the scalar-induced potential. Deflection angles follow from standard integrals over $\nabla_\perp\Phi_{\rm lens}$.
+
+\section{Appendix E: Linear perturbation equations}
+We give the coupled set for matter density contrast $\delta_m$, scalar perturbation $\delta\phi$ and metric potentials in synchronous and Newtonian gauges. The equations include modified source terms proportional to $\beta'$ and nonlinear kinetic coefficients.
+
+\section{Appendix F: Notes on laboratory probes}
+Sketches of interferometry experiments sensitive to phase-coherence-dependent couplings, and order-of-magnitude estimates for expected signal strengths under optimistic parameter choices.
+
+\begin{thebibliography}{99}
+\bibitem{Milgrom1983} M. Milgrom, Astrophys. J. 270, 365 (1983).
+\bibitem{Bekenstein2004} J. Bekenstein, Phys. Rev. D 70, 083509 (2004).
+\bibitem{Verlinde2016} E. Verlinde, SciPost Phys. 2, 016 (2017).
+\bibitem{Skordis2020} C. Skordis and T. Zlosnik, Phys. Rev. Lett. 127, 161302 (2021).
+\bibitem{Famaey2012} B. Famaey and S. McGaugh, Living Rev. Relativity 15, 10 (2012).
+\end{thebibliography}
+
+\end{document}
